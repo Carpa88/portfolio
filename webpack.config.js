@@ -8,7 +8,7 @@ const plugins = [
 			filename: '[name].[contenthash].css',
 	}), 
 	new HtmlWebpackPlugin({
-	//   template: './src/index.html',
+	  template: './src/main.html',
 		title: 'Portfolio',
 })
 ]
@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'production') {
 module.exports = {
   mode,
   target,
-  entry: './src/index.js',
+  entry: './src/main.tsx',
   devtool: 'inline-source-map',
   module: {
     rules: [
